@@ -39,9 +39,6 @@ create client app and cd into new folder
 - create-react-app client
 - cd client
 
-create proxy line in client package.json
-- "proxy": "http://localhost:5000",
-
 run client
 - npm start
 
@@ -58,8 +55,14 @@ create customers component
 - customers.js
 - customers.css
 
+install router
+- npm i react-router-dom
+
 install axios into client folder
 - npm install axios
+
+create proxy line in client package.json
+- "proxy": "http://localhost:5000",
 
 
 ===============================================================================
