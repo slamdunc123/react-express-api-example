@@ -2,19 +2,24 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// views
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+// router
+import { BrowserRouter as Router } from 'react-router-dom';
+
+// views
 import Header from './components/layouts/Header/Header';
 import Main from './components/layouts/Main/Main';
 import Footer from './components/layouts/Footer/Footer';
 
 function App() {
 	return (
-		<div className='App'>
-			<Header />
-			<Main />
-			<Footer />
-			{/* <header className="App-header">
+		<Router basename={'/'}>
+			<div className='App'>
+				<Header />
+				<Main />
+				<Footer />
+				{/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -28,7 +33,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-		</div>
+			</div>
+		</Router>
 	);
 }
 

@@ -61,6 +61,9 @@ install router
 install axios into client folder
 - npm install axios
 
+install reactstrap into client folder
+- npm install reactstrap bootstrap
+
 create proxy line in client package.json
 - "proxy": "http://localhost:5000",
 
