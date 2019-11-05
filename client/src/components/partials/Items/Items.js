@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 // http
 import axios from 'axios';
 
+// css
+import './Items.scss';
+
 const Items = () => {
 	const [items, setItems] = useState([]);
 	useEffect(() => {
@@ -15,17 +18,23 @@ const Items = () => {
 
 	return (
 		<div>
-			{items.length > 0 ? (
-				items.map((item, index) => (
-					<div key={index}>
-						<div>
-							{item.name} - {item.description}
-						</div>
-					</div>
-				))
-			) : (
-				<h5>No items</h5>
-			)}
+			<table>
+				<thead>
+					<tr>
+						<td>Name</td>
+						<td>Description</td>
+					</tr>
+				</thead>
+				<tbody>
+					{items.length > 0 &&
+						items.map((item, index) => (
+							<tr key={index}>
+								<td>{item.name}</td>
+								<td>{item.description}</td>
+							</tr>
+						))}
+				</tbody>
+			</table>
 		</div>
 	);
 };
