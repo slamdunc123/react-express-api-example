@@ -1,7 +1,9 @@
+@import '../../../scss/variables.scss';
+
 .mobile-navigation {
 	display: flex;
 	width: 100vw;
-	background-color: lightgrey;
+	background-color: $primary-color;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -31,10 +33,10 @@
 	a {
 		text-decoration: none;
 		padding: 0.5rem;
-		color: #222;
+		color: $secondary-color;
 
 		&:hover {
-			color: #fff;
+			color: $tertiary-color;
 		}
 	}
 
@@ -46,7 +48,7 @@
 .mobile-menu {
 	width: 100vw;
 	height: 100px;
-	background-color: rgba(66, 66, 66, 0.9);
+	background-color: rgba($secondary-color, 0.9);
 	position: absolute;
 	top: 43px;
 	display: flex;
@@ -57,8 +59,12 @@
 	// border-radius: 2%;
 
 	a {
-		color: #fff;
+		color: $tertiary-color;
 		text-decoration: none;
+
+		&:hover {
+			color: $primary-color;
+		}
 	}
 
 	@media (min-width: 576px) {
