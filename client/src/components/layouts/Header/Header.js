@@ -1,12 +1,12 @@
 import React from 'react';
 
 // partials
-import NavigationReactStrap from '../../partials/Navigation/NavigationReactStrap';
+import Navigation from '../../partials/Navigation/Navigation';
 
 const Header = () => {
 	return (
 		<div>
-			<NavigationReactStrap />
+			<Navigation />
 		</div>
 	);
 };
