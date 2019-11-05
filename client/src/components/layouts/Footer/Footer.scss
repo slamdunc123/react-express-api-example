@@ -1,6 +1,10 @@
 .footer {
 	width: 100vw;
+	height: 50px;
 	background-color: lightgrey;
 	position: absolute;
 	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
