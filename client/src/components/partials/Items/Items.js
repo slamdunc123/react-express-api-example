@@ -18,7 +18,9 @@ const Items = () => {
 			{items.length > 0 ? (
 				items.map((item, index) => (
 					<div key={index}>
-						<div>{item.name}</div>
+						<div>
+							{item.name} - {item.description}
+						</div>
 					</div>
 				))
 			) : (
