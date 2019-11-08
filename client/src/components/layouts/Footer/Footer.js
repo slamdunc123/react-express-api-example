@@ -9,7 +9,7 @@ import Copyright from '../../partials/Copyright/Copyright';
 
 const Footer = () => {
 	return (
-		<div className='footer'>
+		<div className='footer-container'>
 			<Social />
 			<Copyright />
 		</div>

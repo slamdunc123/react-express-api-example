@@ -1,9 +1,9 @@
 @import '../../../scss/variables.scss';
 
-.nav-main {
+.nav-container {
 	display: flex;
 	width: 100vw;
-	background-color: $primary-color;
+	background-color: $primary-background-color;
 	justify-content: space-between;
 }
 
@@ -25,10 +25,10 @@
 	a {
 		text-decoration: none;
 		padding: 0.5rem;
-		color: $secondary-color;
+		color: $tertiary-text-color;
 
 		&:hover {
-			color: $tertiary-color;
+			color: $secondary-text-color;
 		}
 	}
 
@@ -40,7 +40,7 @@
 .nav-mobile-menu {
 	width: 100vw;
 	height: 100px;
-	background-color: rgba($secondary-color, 0.9);
+	background-color: rgba($secondary-background-color, 0.9);
 	position: absolute;
 	top: 43px;
 	display: flex;
@@ -51,11 +51,11 @@
 	// border-radius: 2%;
 
 	a {
-		color: $tertiary-color;
+		color: $primary-text-color;
 		text-decoration: none;
 
 		&:hover {
-			color: $primary-color;
+			color: $primary-text-color;
 		}
 	}
 

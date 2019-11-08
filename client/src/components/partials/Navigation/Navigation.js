@@ -25,7 +25,7 @@ const Navigation = () => {
 
 	return (
 		<div>
-			<div className='nav-main'>
+			<div className='nav-container'>
 				<Brand />
 				<div className='nav-menu'>
 					<NavLink

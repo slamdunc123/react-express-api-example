@@ -1,7 +1,9 @@
-.footer {
+@import '../../../scss/variables.scss';
+
+.footer-container {
 	width: 100vw;
 	height: 50px;
-	background-color: lightgrey;
+	background-color: $primary-background-color;
 	position: absolute;
 	bottom: 0;
 	display: flex;
