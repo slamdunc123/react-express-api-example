@@ -21,8 +21,8 @@ const Items = () => {
 			<table>
 				<thead>
 					<tr>
-						<td>Name</td>
-						<td>Description</td>
+						<th>Name</th>
+						<th>Description</th>
 					</tr>
 				</thead>
 				<tbody>

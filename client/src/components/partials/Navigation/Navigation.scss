@@ -1,14 +1,13 @@
 @import '../../../scss/variables.scss';
 
-.mobile-navigation {
+.nav-main {
 	display: flex;
 	width: 100vw;
 	background-color: $primary-color;
 	justify-content: space-between;
-	align-items: center;
 }
 
-.mobile-burger-button {
+.nav-burger {
 	margin: 0 1rem 0 0;
 	font-size: 1.5rem;
 	align-self: flex-end;
@@ -17,13 +16,6 @@
 	@media (min-width: 576px) {
 		display: none;
 	}
-}
-
-.brand-logo {
-	margin: 0 0 0 1rem;
-	font-size: 1.2rem;
-	align-self: flex-start;
-	padding: 0.5rem;
 }
 
 .nav-menu {
@@ -45,7 +37,7 @@
 	}
 }
 
-.mobile-menu {
+.nav-mobile-menu {
 	width: 100vw;
 	height: 100px;
 	background-color: rgba($secondary-color, 0.9);

@@ -5,6 +5,9 @@ import { NavLink } from 'react-router-dom';
 // css
 import './Navigation.scss';
 
+// partials
+import Brand from '../Brand/Brand';
+
 const Navigation = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -22,8 +25,8 @@ const Navigation = () => {
 
 	return (
 		<div>
-			<div className='mobile-navigation'>
-				<div className='brand-logo'>Brand Logo</div>
+			<div className='nav-main'>
+				<Brand />
 				<div className='nav-menu'>
 					<NavLink
 						className='nav-link'
@@ -56,13 +59,13 @@ const Navigation = () => {
 						Contact
 					</NavLink>
 				</div>
-				<div className='mobile-burger-button'>
+				<div className='nav-burger'>
 					<i className='fas fa-bars' onClick={toggleBurgerMenu}></i>
 				</div>
 			</div>
 
 			{isOpen ? (
-				<div className='mobile-menu'>
+				<div className='nav-mobile-menu'>
 					<NavLink
 						className='nav-link'
 						onClick={e => {
