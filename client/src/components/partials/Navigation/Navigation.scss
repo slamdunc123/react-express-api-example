@@ -1,9 +1,9 @@
 @import '../../../scss/variables.scss';
 
-.nav-container {
+.nav {
 	display: flex;
 	width: 100vw;
-	background-color: $primary-background-color;
+	background-color: $base-color;
 	justify-content: space-between;
 }
 
@@ -12,6 +12,7 @@
 	font-size: 1.5rem;
 	align-self: flex-end;
 	padding: 0.5rem;
+	color: $text-color;
 
 	@media (min-width: 576px) {
 		display: none;
@@ -25,10 +26,10 @@
 	a {
 		text-decoration: none;
 		padding: 0.5rem;
-		color: $tertiary-text-color;
+		color: $text-color;
 
 		&:hover {
-			color: $secondary-text-color;
+			color: darken($text-color, 25%);
 		}
 	}
 
@@ -40,7 +41,7 @@
 .nav-mobile-menu {
 	width: 100vw;
 	height: 100px;
-	background-color: rgba($secondary-background-color, 0.9);
+	background-color: rgba(darken($base-color, 25%), 0.9);
 	position: absolute;
 	top: 43px;
 	display: flex;
@@ -51,11 +52,11 @@
 	// border-radius: 2%;
 
 	a {
-		color: $primary-text-color;
+		color: $text-color;
 		text-decoration: none;
 
 		&:hover {
-			color: $primary-text-color;
+			color: darken($text-color, 25%);
 		}
 	}
 

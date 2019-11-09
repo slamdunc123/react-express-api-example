@@ -17,7 +17,7 @@ const Items = () => {
 	}, []);
 
 	return (
-		<div className='items-container'>
+		<div className='items'>
 			<table>
 				<thead>
 					<tr>
